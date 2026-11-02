@@ -17,12 +17,13 @@ Status:   Building open audio spatialization tooling & remote acoustic telemetry
 
 ## About Me
 
-I am a systems software engineer with a deep fascination for the intersection of acoustics, spatial mathematics, and mechanical computing efficiency. Most of my working hours are spent crafting zero-allocation audio algorithms, optimizing memory layouts for SIMD execution, and writing firmware for outdoor solar-powered acoustic monitoring arrays.
+I am a senior systems software engineer specializing in deterministic real-time audio architectures, spatial acoustics, and high-throughput hardware optimization. My engineering practice centers on crafting zero-allocation audio processing pipelines, designing lock-free concurrent primitives, and structuring memory layouts for optimal SIMD vectorization.
 
-When I am not profiling lock-free ring buffers or measuring filter phase distortions with an oscilloscope, you can usually find me field-recording bird migration patterns across Nordic archipelagos or restoring analog reel-to-reel tape decks.
+When not profiling ring buffers with hardware counters or measuring filter phase linearity with an oscilloscope, I spend my time field-recording avian acoustic patterns across the Swedish west coast or restoring vintage analog reel-to-reel audio electronics.
 
 - 🔭 Designing deterministic, lock-free real-time audio graphs.
-- ⚡ Optimizing SIMD kernels (AVX-512 & ARM NEON) for acoustic impulse convolutions.
+- ⚡ Optimizing SIMD kernels (AVX-512 & ARM NEON) for partitioned impulse convolution.
+- 🛡️ Hardening embedded acoustic sensor firmware with strict memory isolation.
 - ☕ Powered by single-origin light roasts and reproducible build systems.
 
 ---
@@ -44,18 +45,18 @@ When I am not profiling lock-free ring buffers or measuring filter phase distort
 > *Zero-allocation, header-first spatial audio convolution library written in Rust.*
 - **Core Architecture**: B-format Ambisonics decoder featuring SIMD-partitioned FFT convolution.
 - **Latency Guarantee**: Sub-1.2ms processing budget at 96kHz / 64 buffer samples without dynamic heap allocation.
-- **Targets**: Native desktop (Linux/macOS/Windows) and WebAssembly target for interactive web synthesizers.
+- **Targets**: Native desktop (Linux/macOS/Windows) and WebAssembly target for interactive synthesizers.
 
 ### `pulsefield`
 > *Ultra-low power acoustic telemetry daemon for remote ecological listening stations.*
 - **Hardware Integration**: Custom STM32 firmware communicating via LTE-M / LoRaWAN with fall-back SD card ring buffer.
 - **Compression**: Adaptive FLAC frame packing optimized for narrow-bandwidth intermittent solar bursts.
-- **Reliability**: Self-healing watchdog pipeline designed to withstand harsh Scandinavian winter conditions.
+- **Resilience**: Hardware watchdog timers and fault-tolerant state recovery routines designed for sub-zero Nordic winters.
 
 ### `decibel-tui`
 > *Terminal-based broadcast loudness analyzer adhering strictly to ITU-R BS.1770-4 and EBU R128 standards.*
 - **User Interface**: Keyboard-driven ratatui interface with real-time true-peak metering and LUFS integration logs.
-- **Driver Support**: Direct ALSA and CoreAudio backend hook without intermediary desktop mixing layers.
+- **Driver Support**: Direct ALSA and CoreAudio backend hooks without intermediary desktop mixing layers.
 
 ---
 

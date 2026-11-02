@@ -17,12 +17,13 @@ Estado: Creando herramientas abiertas de espacialización de audio y telemetría
 
 ## Sobre Mí
 
-Soy un ingeniero de software de sistemas apasionado por el punto de encuentro entre la acústica, las matemáticas espaciales y la eficiencia mecánica del silicio. Dedico la mayor parte de mi tiempo al diseño de algoritmos de audio con cero asignaciones dinámicas (zero-allocation), la optimización de disposiciones de memoria para ejecución SIMD y el desarrollo de firmware para estaciones remotas de monitorización acústica alimentadas por energía solar.
+Soy un ingeniero de software de sistemas sénior especializado en arquitecturas de audio deterministas en tiempo real, acústica espacial y optimización de hardware de alto rendimiento. Mi práctica de ingeniería se centra en diseñar tuberías de audio sin asignaciones dinámicas (zero-allocation), primitivas de concurrencia libres de bloqueos (lock-free) y estructuras de memoria preparadas para vectorización SIMD.
 
-Cuando no estoy perfilando buffers circulares libres de bloqueos (lock-free) o midiendo la distorsión de fase de filtros con un osciloscopio, suelo estar grabando cantos de aves migratorias en los archipiélagos nórdicos o restaurando magnetófonos analógicos de bobina abierta.
+Cuando no estoy perfilando buffers circulares con contadores de hardware o midiendo la linealidad de fase de filtros con un osciloscopio, suelo estar grabando patrones acústicos de aves en la costa oeste sueca o restaurando electrónica analógica clásica de bobina abierta.
 
 - 🔭 Diseñando grafos de audio deterministas y sin bloqueos para tiempo real.
-- ⚡ Optimizando núcleos SIMD (AVX-512 y ARM NEON) para convolución de impulsos acústicos.
+- ⚡ Optimizando núcleos SIMD (AVX-512 y ARM NEON) para convolución de impulsos particionada.
+- 🛡️ Fortalecimiento de firmware para sensores acústicos embebidos con estricto aislamiento de memoria.
 - ☕ Impulsado por café de tueste claro de origen único y sistemas de compilación reproducibles.
 
 ---
@@ -50,7 +51,7 @@ Cuando no estoy perfilando buffers circulares libres de bloqueos (lock-free) o m
 > *Demonio de telemetría acústica de ultrabajo consumo para estaciones de escucha ecológica en lugares remotos.*
 - **Integración de Hardware**: Firmware para microcontrolador STM32 con enlace LTE-M / LoRaWAN y buffer circular en tarjeta SD.
 - **Compresión**: Empaquetado adaptativo de tramas FLAC optimizado para transmisiones solares intermitentes de bajo ancho de banda.
-- **Fiabilidad**: Secuencia de recuperación automática por watchdog pensada para resistir los inviernos escandinavos.
+- **Fiabilidad**: Temporizadores watchdog por hardware y rutinas de recuperación ante fallos tolerantes a inviernos nórdicos extremos.
 
 ### `decibel-tui`
 > *Analizador de sonoridad en terminal que cumple rigurosamente las normas ITU-R BS.1770-4 y EBU R128.*

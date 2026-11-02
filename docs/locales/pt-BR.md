@@ -17,12 +17,13 @@ Status Atual: Desenvolvendo ferramentas abertas de áudio espacial e telemetria 
 
 ## Sobre Mim
 
-Sou engenheiro de software de sistemas fascinado pela convergência entre acústica, matemática espacial e eficiência mecânica de computação. Passo a maior parte dos meus dias projetando algoritmos de áudio sem alocação dinâmica (zero-allocation), organizando layouts de memória para vetorização SIMD e programando firmware para matrizes de monitoramento acústico remoto alimentadas por energia solar.
+Sou engenheiro sênior de software de sistemas especializado em arquiteturas determinísticas de áudio em tempo real, acústica espacial e otimização de hardware de alto rendimento. Minha prática de engenharia se concentra no desenvolvimento de pipelines de áudio sem alocação dinâmica (zero-allocation), primitivas de concorrência livres de bloqueios (lock-free) e estruturação de memória para vetorização SIMD de alta performance.
 
-Quando não estou analisando o desempenho de filas circulares sem travamento (lock-free) ou medindo a distorção de fase de filtros com um osciloscópio, costumo gravar cantos de pássaros migratórios em arquipélagos nórdicos ou restaurar gravadores analógicos de fita de rolo.
+Quando não estou analisando filas circulares com contadores de hardware ou medindo a linearidade de fase de filtros com um osciloscópio, gravo padrões acústicos de aves na costa oeste sueca ou restauro equipamentos analógicos de áudio de fita de rolo.
 
 - 🔭 Arquitetura de grafos de áudio determinísticos e lock-free para tempo real.
-- ⚡ Otimização de núcleos SIMD (AVX-512 e ARM NEON) para convolução de respostas ao impulso.
+- ⚡ Otimização de núcleos SIMD (AVX-512 e ARM NEON) para convolução de respostas ao impulso particionada.
+- 🛡️ Blindagem de firmware para sensores acústicos embarcados com isolamento estrito de memória.
 - ☕ Movido a café especial de torra clara e sistemas de compilação reproduzíveis.
 
 ---
@@ -50,7 +51,7 @@ Quando não estou analisando o desempenho de filas circulares sem travamento (lo
 > *Daemon de telemetria bioacústica de ultra-baixo consumo para estações remotas de observação ecológica.*
 - **Integração de Hardware**: Firmware para STM32 integrado a enlaces LTE-M / LoRaWAN com fallback de buffer circular em cartão SD.
 - **Compressão**: Empacotamento adaptativo de quadros FLAC otimizado para transmissões curtas e intermitentes movidas a energia solar.
-- **Robustez**: Mecanismo de watchdog autorregenerativo projetado para suportar o rigoroso inverno nórdico.
+- **Robustez**: Temporizadores watchdog em hardware e rotinas tolerantes a falhas projetados para suportar o rigoroso inverno nórdico.
 
 ### `decibel-tui`
 > *Analisador de sonoridade em terminal estritamente alinhado às normas de transmissão ITU-R BS.1770-4 e EBU R128.*

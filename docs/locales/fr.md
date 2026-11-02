@@ -17,12 +17,13 @@ Activité :     Conception d'outils d'audio spatial et de télémétrie bioacous
 
 ## À Propos de Moi
 
-Je suis ingénieur logiciel système, passionné par le point de rencontre entre l'acoustique, la géométrie spatiale et l'efficacité intrinsèque du matériel. Je consacre la majeure partie de mon temps à concevoir des algorithmes audio sans aucune allocation dynamique (zero-allocation), à agencer la mémoire pour l'exécution SIMD et à développer le micrologiciel de stations de surveillance acoustique solaires autonomes.
+Je suis ingénieur logiciel système senior, spécialisé dans les architectures audio déterministes en temps réel, l'acoustique spatiale et l'optimisation matérielle de haute performance. Ma pratique d'ingénierie se concentre sur la conception de pipelines audio sans aucune allocation dynamique (zero-allocation), l'élaboration de primitives de concurrence sans verrou (lock-free) et l'organisation de la mémoire pour une vectorisation SIMD optimale.
 
-Lorsque je ne profile pas des files d'attente circulaires sans verrou (lock-free) ou que je ne mesure pas la distorsion de phase de filtres à l'oscilloscope, je parcours les archipels scandinaves pour enregistrer sur le terrain les chants d'oiseaux migrateurs, ou je restaure des magnétophones analogiques à bande magnétique.
+Lorsque je ne profile pas des files d'attente circulaires à l'aide de compteurs matériels ou que je ne mesure pas la linéarité de phase de filtres à l'oscilloscope, je parcours la côte ouest suédoise pour enregistrer sur le terrain les chants d'oiseaux migrateurs, ou je restaure des électroniques analogiques audio à bande magnétique.
 
 - 🔭 Conception de graphes audio déterministes et non-bloquants en temps réel.
-- ⚡ Optimisation de noyaux SIMD (AVX-512 et ARM NEON) pour la convolution d'impulsions acoustiques.
+- ⚡ Optimisation de noyaux SIMD (AVX-512 et ARM NEON) pour la convolution d'impulsions partitionnée.
+- 🛡️ Durcissement de micrologiciels pour capteurs acoustiques embarqués avec isolation stricte de la mémoire.
 - ☕ Mû par des cafés d'origine unique à torréfaction claire et des chaînes de compilation reproductibles.
 
 ---
@@ -50,7 +51,7 @@ Lorsque je ne profile pas des files d'attente circulaires sans verrou (lock-free
 > *Démon de télémétrie acoustique ultra-basse consommation destiné aux postes d'écoute écologique isolés.*
 - **Intégration Matérielle** : Micrologiciel STM32 sur mesure communiquant par LTE-M / LoRaWAN avec sauvegarde sur carte SD en cas de panne réseau.
 - **Compression** : Empaquetage adaptatif de trames FLAC spécialement calibré pour les transmissions intermittentes par énergie solaire.
-- **Résilience** : Boucle de surveillance watchdog auto-réparatrice capable d'affronter les rigueurs de l'hiver nordique.
+- **Résilience** : Minuteurs watchdog matériels et routines de reprise après incident conçus pour affronter les rigueurs de l'hiver nordique.
 
 ### `decibel-tui`
 > *Analyseur de sonie en ligne de commande strictement conforme aux normes de diffusion ITU-R BS.1770-4 et EBU R128.*

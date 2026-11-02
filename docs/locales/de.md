@@ -17,12 +17,13 @@ Status:       Entwicklung von Open-Source-Raumaudio-Tools & akustischer Telemetr
 
 ## Über Mich
 
-Ich bin Systems-Software-Entwickler mit einer tiefen Faszination für die Schnittmenge aus Akustik, Raummathematik und hardwarenaher Recheneffizienz. Die meiste Zeit verbringe ich mit der Konzeption von Audio-Algorithmen ohne dynamische Speicherallokation (Zero-Allocation), der Optimierung von Speicherlayouts für die SIMD-Verarbeitung und der Firmware-Entwicklung für solarbetriebene akustische Umweltmessstationen.
+Ich bin Senior Systems-Software-Entwickler mit Spezialisierung auf deterministische Echtzeit-Audioarchitekturen, räumliche Akustik und hardwarenahe Recheneffizienz. Mein ingenieurtechnischer Schwerpunkt liegt auf der Entwicklung von Audio-Pipelines ohne dynamische Speicherallokation (Zero-Allocation), dem Entwurf lock-freier Nebenläufigkeitsprimitive und der Ausrichtung von Speicherstrukturen für optimale SIMD-Vektorisierung.
 
-Wenn ich nicht gerade lock-freie Ringpuffer profiliere oder Phasenverzerrungen von Filtern am Oszilloskop messe, bin ich meistens in den skandinavischen Schärengärten unterwegs, um den Vogelzug aufzunehmen, oder ich restauriere analoge Tonbandmaschinen.
+Wenn ich nicht gerade lock-freie Ringpuffer mittels Hardware-Countern profiliere oder Phasenlinearitäten von Filtern am Oszilloskop messe, nehme ich an der schwedischen Westküste Vogelzug-Akustikmuster im Feld auf oder restauriere analoge Tonbandelektronik.
 
 - 🔭 Entwurf deterministischer, lock-freier Echtzeit-Audionetzwerke.
-- ⚡ Optimierung von SIMD-Kernels (AVX-512 & ARM NEON) für akustische Impulsfaltungen.
+- ⚡ Optimierung von SIMD-Kernels (AVX-512 & ARM NEON) für partitionierte Impulsfaltungen.
+- 🛡️ Härtung von Embedded-Akustiksensor-Firmware durch strikte Speicherisolation.
 - ☕ Angetrieben von hell geröstetem Single-Origin-Kaffee und reproduzierbaren Build-Systemen.
 
 ---
@@ -50,7 +51,7 @@ Wenn ich nicht gerade lock-freie Ringpuffer profiliere oder Phasenverzerrungen v
 > *Akustischer Telemetrie-Daemon mit extrem geringer Leistungsaufnahme für ökologische Fernabhörstationen.*
 - **Hardware-Integration**: Eigene STM32-Firmware mit LTE-M / LoRaWAN-Anbindung und Ringspeicher-Fallback auf SD-Karten.
 - **Kompression**: Adaptives FLAC-Frame-Packing, optimiert für schmalbandige, solar bedingte Übertragungsspitzen.
-- **Zuverlässigkeit**: Selbstheilende Watchdog-Architektur, konzipiert für die harten Bedingungen skandinavischer Winter.
+- **Zuverlässigkeit**: Hardware-Watchdog-Timer und fehlertolerante Wiederherstellungsroutinen, konzipiert für subpolare skandinavische Winter.
 
 ### `decibel-tui`
 > *Terminalbasierter Lautheitsanalysator nach den Rundfunkstandards ITU-R BS.1770-4 und EBU R128.*
