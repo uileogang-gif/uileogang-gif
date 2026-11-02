@@ -1,0 +1,13 @@
+# Secrets & Environment variables
+.env
+.env.*
+tokens.json
+load_env.js
+
+# Local Browser Profiles
+chrome_profile/
+profile/
+
+# Node modules & scratch
+node_modules/
+*.log
